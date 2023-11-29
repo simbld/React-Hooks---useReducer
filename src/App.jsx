@@ -1,7 +1,10 @@
 import './App.css';
 import { useReducer } from 'react';
 
-const initialState = 0;
+const initialState = {
+	counter: 0,
+	step: 1,
+};
 
 function reducer(state, action) {
 	switch (action.type) {
